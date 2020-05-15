@@ -1,6 +1,6 @@
 
 var url = window.location.href;
-var swLocation = '/pwa-komicilios/sw.js';
+var swLocation = '/pwakomi/sw.js';
 
 var swReg;
 
