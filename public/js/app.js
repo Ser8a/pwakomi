@@ -58,25 +58,25 @@ var usuario;
 
 function crearMensajeHTML(mensaje, personaje) {
 
-    var content =`
-    <li class="animated fadeIn fast">
-        <div class="avatar">
-            <img src="img/avatars/${ personaje }.jpg">
-        </div>
-        <div class="bubble-container">
-            <div class="bubble">
-                <h3>@${ personaje }</h3>
-                <br/>
-                ${ mensaje }
-            </div>
+//    var content =`
+//    <li class="animated fadeIn fast">
+//        <div class="avatar">
+//            <img src="img/avatars/${ personaje }.jpg">
+//        </div>
+//        <div class="bubble-container">
+//            <div class="bubble">
+//                <h3>@${ personaje }</h3>
+//                <br/>
+//                ${ mensaje }
+//            </div>
             
-            <div class="arrow"></div>
-        </div>
-    </li>
-    `;
+//            <div class="arrow"></div>
+//        </div>
+//    </li>
+//    `;
 
-    timeline.prepend(content);
-    cancelarBtn.click();
+//    timeline.prepend(content);
+//    cancelarBtn.click();
 
 }
 
@@ -255,11 +255,11 @@ function enviarNotificacion() {
 
     const notificationOpts = {
         body: 'Este es el cuerpo de la notificación',
-        icon: 'img/icons/icon-72x72.png'
+        icon: ''
     };
 
 
-    const n = new Notification('Hola Mundo', notificationOpts);
+    const n = new Notification('', notificationOpts);
 
     n.onclick = () => {
         console.log('Click');
